@@ -1,5 +1,8 @@
 function calculateTip(event){
-    event.preventDefault()
+    event.preventDefault();
+    let bill = document.getElementById('bill').value;
+    let serviceQuality = document.getElementById('serviceQuality').value;
+    let numOfPeople = document.getElementById('people').value;
 
 }
 document.getElementById('totalTip').style.display = 'nome';
