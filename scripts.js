@@ -1,10 +1,9 @@
 function calculateTip(event){
-    alert('fui submetido para a função!');
+    event.preventDefault()
 
 }
-document.getElementById('totalTip').style.display = "nome";
-document.getElementById('each').style.display = "nome";
+document.getElementById('totalTip').style.display = 'nome';
+document.getElementById('each').style.display = 'nome';
 
 document.getElementById('tipsForm').addEventListener('submit', calculateTip)
 
-alert('oii')
