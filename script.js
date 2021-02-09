@@ -20,6 +20,7 @@ function calculadora(event){
     total = total.toFixed(2);
     document.getElementById('tip').innerHTML = total;
     document.getElementById('totalTip').style.display = "block";
+    return total;
 }
    document.getElementById('totalTip').style.display = 'none'; 
    document.getElementById('each').style.display = 'none';
