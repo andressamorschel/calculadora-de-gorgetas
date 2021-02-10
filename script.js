@@ -1,4 +1,5 @@
 function calculadora(event){
+
     event.preventDefault();
     let bill = document.getElementById('bill').value;
     let serviceQuality = document.getElementById('serviceQuality').value;
@@ -17,13 +18,15 @@ function calculadora(event){
     }
 
     let total = (bill * serviceQuality) /people;
-    total = total.toFixed(2);
-    document.getElementById('tip').innerHTML = total;
+    var valorFormatado = total.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+
+
+
+    document.getElementById('tip').innerHTML = valorFormatado;
     document.getElementById('totalTip').style.display = "block";
-    return total;
 }
    document.getElementById('totalTip').style.display = 'none'; 
    document.getElementById('each').style.display = 'none';
 
-     document.getElementById('bill').addEventListener('submit', calculadora)
+     document.getElementById('tipsForm').addEventListener('submit', calculadora)
   
